@@ -37,7 +37,7 @@ inline int Sumobot_Rangefinder::getDistance(){
   return sensor.readRangeContinuousMillimeters();
 }
 
-inline bool Sumobot_Rangefinder::detect(){
+bool Sumobot_Rangefinder::detect(){
   distance = getDistance();
   return (2 < distance && distance < 100);
   
