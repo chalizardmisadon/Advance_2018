@@ -40,7 +40,7 @@ bool Sumobot_LineSensor::detectLine(){
     return ((1023-tolerance) < getAnalog());
   #else
     return (getAnalog() < (0+tolerance));
-   #endif
+  #endif
 }
 
 
