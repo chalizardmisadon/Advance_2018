@@ -37,17 +37,9 @@ inline int Sumobot_LineSensor::getAnalog(){
 
 bool Sumobot_LineSensor::detectLine(){
   #if check_high_value
-    if ((1023-tolerance) < getAnalog()){
-      return true;
-    } else {
-      return false;
-    }
+    return ((1023-tolerance) < getAnalog());
   #else
-    if (getAnalog() < (0+tolerance)){
-      return true;
-    } else {
-      return false;
-    }
+    return (getAnalog() < (0+tolerance));
    #endif
 }
 
