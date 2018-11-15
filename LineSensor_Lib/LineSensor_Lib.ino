@@ -1,5 +1,4 @@
 //==================== LineSensor Header ====================
-
 #ifndef Sumobot_LineSensor_h
 #define Sumobot_LineSensor_h
 
